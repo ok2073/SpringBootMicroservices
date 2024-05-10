@@ -5,8 +5,6 @@ import lombok.*;
 
 @Entity
 @Table(name = "departments")
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
 public class Department {
     /*
