@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 @AllArgsConstructor
-public class UserServiceImpl implements UserService {
+public class UserServiceImplRestTemplate implements UserService {
 
     private UserRepository userRepository;
     private RestTemplate restTemplate;
