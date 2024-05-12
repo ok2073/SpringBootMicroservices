@@ -27,7 +27,8 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<ResponseDto> getUser(@PathVariable("id") Long userId){
-        ResponseDto responseDto = userServiceOpenFeign.getUserOF(userId);
+        //ResponseDto responseDto = userServiceOpenFeign.getUserOF(userId);
+        ResponseDto responseDto = userService.getUser(userId);
         return ResponseEntity.ok(responseDto);
     }
 }
